@@ -53,54 +53,41 @@ form_2.addEventListener('submit',(e)=>{
   const tmcValue  = Math.abs(parseFloat(tmcInput.value)) // total mountly cost
   const tmValue = Math.abs(parseFloat(tmInput.value)) // total meal 
   const mc = parseFloat((tmcValue / tmValue).toFixed(2)) // calculate meal charge TMC/TM
-  calculateData.tmcValue = tmcValue
-  calculateData.tmValue = tmValue
-  calculateData.mc = mc 
   localStorage.setItem('mc',mc) //passing data to views.js file
 
   const bmValue = Math.abs(parseInt(bmInput.value))// boder meal
   localStorage.setItem('bmValue',bmValue) 
   const boderMealCost = Math.ceil(mc*bmValue)// calculate boder total meal cost
   localStorage.setItem('boderMealCost',boderMealCost) //passing data to views.js file 
-  calculateData.bmValue = bmValue
-  calculateData.totalMealCost = boderMealCost
 
   const sbValue = Math.abs(parseInt(sbInput.value))// shaf bill
   const wbValue = Math.abs(parseFloat(wbInput.value).toFixed(2))// wifi bill
   const dbValue = Math.abs(parseFloat(dbInput.value).toFixed(2))// dust bill
-  calculateData.sbValue = sbValue
-  calculateData.wbValue = wbValue
-  calculateData.dbValue = dbValue
-
+ 
 
   const bacValue = Math.abs(parseInt(bacInput.value))// boder additional cost
-  calculateData.bacValue = bacValue
   let boderTotalCost 
-  calculateData.boderTotalCost = boderTotalCost //push in object
+  
   if(bacValue){
-     boderTotalCost = Math.ceil(sbValue+wbValue+dbValue+totalMealCost+bacValue)
+     boderTotalCost = Math.ceil(sbValue+wbValue+dbValue+boderTotalCost+bacValue)
     form_2.reset()
   }
   else{
-     boderTotalCost = Math.ceil(sbValue+wbValue+dbValue+totalMealCost)  
+     boderTotalCost = Math.ceil(sbValue+wbValue+dbValue+boderTotalCost)  
     form_2.reset()
   }// calculate boder total cost 
 
   localStorage.setItem('boderTotalCost', boderTotalCost)// passing data to views.js file
   // window.location.href = 'views.html'
   const bnValue = bnInput.value
-  calculateData.bnValue = bnValue
+
   localStorage.setItem('bnValue',bnValue)
-  console.log(bnValue)
+  
   
   form_2.reset()
   
 })
 
-export let calculateData={
-  
-}
 
-console.log(calculateData)
 
 

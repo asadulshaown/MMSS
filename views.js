@@ -36,19 +36,12 @@ td2.textContent = bmValue //add value in td tag
 
 const td3 = document.createElement('td')
 td3.textContent = boderMealCost
-import calculateData from './script'
-console.log(calculateData);
 
 
 
 tr.appendChild(td1) //append td tag inside tr tag 
 tr.appendChild(td2) //append td tag inside tr tag
 tr.appendChild(td3) //append td tag inside tr tag
-
-
-
-
-console.log(boderTotalCost)
 
 
 
