@@ -1,0 +1,199 @@
+
+*{
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.heading{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  animation: heading_ani 5s alternate linear infinite;
+}
+ @keyframes heading_ani {
+  0%{
+    color: black;
+  }
+  100%{
+    color: green;
+  }
+}
+.views{
+  position: absolute;
+  top: 40px;
+  left: 90%;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid black;
+  font-weight: bolder;  
+}
+.views:hover{
+  transform: skewX(-30deg );
+  transition: 0.2s linear;
+}
+.nam_add{
+  border-bottom:2px  solid black;
+  display: flex;
+  justify-content: space-around;
+}
+.heading_1 .heading_2 .heading_3{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.mounthName{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font: 400px;
+  margin: 20px 0px 0px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mounthName label input{
+  font: bold;
+  height: 30px;
+}
+.mounthNameInput{
+  font: 200px;
+}
+.nameInput{
+  font: 200px;
+}
+.addressInput{
+  font: 200px;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto auto auto;
+  font: bold;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+/* second form */
+.tmc{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font: 400px;
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+.tmc label input{
+  font: bold;
+  height: 30px;
+  display: flex;
+}
+.submit_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto 80px auto;
+  font: bold;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+.boderInfo{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font: 400px;
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+}
+.boderInfo label input{
+  font: bold;
+  height: 30px;
+  display: flex;
+}
+
+
+
+
+/* views.html */
+.home{
+  position: absolute;
+  top: 40px;
+  left: 90%;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+.home:hover{
+  transform: skewX(-30deg );
+  transition: 0.2s linear;
+}
+
+/* .name{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+ 
+} */
+.massInfo {
+  border-bottom:2px  solid black;
+  display: flex;
+  justify-content: space-around;
+}
+.massInfo h2{
+  text-transform: capitalize;
+}
+.address{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* float: right;
+  margin: 10px 400px 0px 0px; */
+}
+
+.boder_Info{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+table {
+  margin: 50px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+}
+
+th{
+  border: 2px solid black;
+  margin: 2px;
+  padding: 6px;
+  width: auto;
+  height: 50px;
+  border-collapse: collapse;
+}
+td {
+    border: 2px solid black;
+    margin: 2px;
+    padding: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    border-collapse: collapse;
+}
