@@ -39,24 +39,35 @@
     <div class="tmc">
       <label for="tmc">Total Mounthly Cost(TMC): <input type="number" name="tmc" id="" placeholder="Enter number" required></label>
 
-      <label for="totalMeal">Total Meal(TM): <input type="number" name="totalMeal" id="" placeholder="Enter number" required></label>
+      <label for="totalMeal">Total Meal(TM): <input type="number" name="totalMeal" id="" step="any" placeholder="Enter number" required></label>
 
       <label for="aditonalCost">Additonal Cost(AC): <input type="number" name="aditonalCost" id="" placeholder="Enter number"></label>
       <label for="reversCost">Revers Cost(RC): <input type="number" name="reversCost" id="" placeholder="Enter number"></label>
     </div>
+    <button class="submit_2" type="submit">Submit</button>
+    </form>
+
+
+    <!-- third form  -->
+    <form action="">
     <div class="boderInfo">
-      <label for="boderName">Boder Name(BN): <input type="text" name="boderName" id="" placeholder="Enter Name" ></label>
+      <label for="boderName">Boder Name(BN): <input  type="text" name="boderName" id="boderName"  placeholder="Enter Name" required></label>
 
-      <label for="shafBill">Shaf Bill(SB): <input type="number" name="shafBill" id="" placeholder="Enter number"></label>
+      <label for="boderMeal">Boder Meal(BM): <input type="number" name="boderMeal" id="" step="any" placeholder="Enter number" required></label>
 
-      <label for="wifiBill">Wifi Bill(WB): <input type="number" name="wifiBill" id="" placeholder="Enter number"></label>
-
-      <label for="dustBill">Dust Bill(DB): <input type="number" name="dustBill" id="" placeholder="Enter number"></label>
+      <label for="mealCharge">Meal Charge(MC): <input type="number" name="mealCharge" id="" value="" step="any" placeholder="No Need" disabled></label>
+ 
+      <label for="shafBill">Shaf Bill(SB): <input type="number" step="any" name="shafBill" id="" placeholder="Enter number"></label>
 
     </div>
 
+
     <div class="boderInfo">
-      <label for="boderMeal">Boder Meal(BM): <input type="number" name="boderMeal" id="" placeholder="Enter number" required></label>
+      <label for="wifiBill">Wifi Bill(WB): <input type="number" name="wifiBill" id="" placeholder="Enter number"></label>
+
+
+      <label for="dustBill">Dust Bill(DB): <input type="number" name="dustBill" id="" placeholder="Enter number"></label>
+
 
       <label for="reciveMoney">Recive Money(RM): <input type="number" name="reciveMoney" id="" placeholder="Enter number" required></label>
 
@@ -65,12 +76,6 @@
     <button class="submit_2" type="submit">Submit</button>
 
   </form>
-
-  <!-- <table class="tb">
-    <tr>
-      <th>mc</th>
-    </tr>
-  </table> -->
 
   <script type="module" src="script.js"></script>
 </body>

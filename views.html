@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>views</title>
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="views.js"></script>
+   <script type="module" src="views.js"></script>
 
 </head>
 <body>
   
   <h1 class="heading">Mass management System</h1>
-  <a class="home" href="/index.html">Home</a>
+  <a id="homeBtn" class="home" href="/index.html">Home</a>
 
   <hr>
   <hr>
@@ -24,7 +24,7 @@
 
   <div class="massInfo">
     <h2>Manager Name:</h2>
-    <h2>Meal Charge:</h2>
+    <h2>Meal Charge:</h2> <h3></h3>
   </div>
   <div class="massInfo">
     <h2>Total Mountly Cost:</h2>
@@ -45,23 +45,13 @@
       <th>Store Money</th>
       <th>Deu---</th>
       <th>Return</th>
+      <th>Additional Cost</th>
     </tr>
     
-    <!-- <tr>
-      <td>Asa</td>
-      <td>50</td>
-      <td>BM*MC</td>
-      <td>400</td>
-      <td>100</td>
-      <td>10</td>
-      <td>3000</td>
-      <td>2500</td>
-      <td>500</td>
-      <td>0</td>
-      <td>0 (demo value)</td>
-    </tr> -->
-    
   </table>
+
+<button id="printBtn" class="printBtn" type="button">Print Now</button>
+
 
 </body>
 </html>

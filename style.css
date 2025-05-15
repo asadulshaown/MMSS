@@ -111,7 +111,6 @@
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   text-transform: capitalize;
-  font: 400px;
   margin: 50px 0px 0px 0px;
   display: flex;
   justify-content: space-around;
@@ -152,6 +151,12 @@
   text-transform: capitalize;
  
 } */
+
+h3{
+  display: inline-block;
+  border: 2px solid red;
+  padding: 5px;
+}
 .massInfo {
   border-bottom:2px  solid black;
   display: flex;
@@ -175,10 +180,11 @@
 }
 
 table {
-  margin: 50px 0px 0px 0px;
+  margin: 50px 0px 100px 0px;
   display: flex;
   justify-content: center;
   border-collapse: collapse;
+
 }
 
 th{
@@ -196,4 +202,26 @@ td {
     font-family: 'Times New Roman', Times, serif;
     text-transform: capitalize;
     border-collapse: collapse;
+}
+.printBtn{
+  position: fixed;
+  bottom: 40px;
+  left: 90%;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid black;
+  font-weight: bolder;
+  font-size:1rem;
+  cursor: pointer;
+}
+
+.printBtn:hover {
+ color: green;
+ background-color: whitesmoke;
+ transition: all .1s linear ;
+ transform:translate3d(2px,-4px,-5px);
 }
